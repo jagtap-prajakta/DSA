@@ -30,15 +30,15 @@ class LinkedList:
             new_node.next = temp.next  # connects the new_node to the next node 
             temp.next = new_node    #connect the previous node to the new_node
 
-    # # find middle node and print its value
-    # def middle(self):
-    #     temp1 = self.head
-    #     temp2 = self.head
+    # find middle node and print its value
+    def middle(self):
+        temp1 = self.head
+        temp2 = self.head
 
-    #     while temp2 and temp2.next:
-    #         temp1 = temp1.next
-    #         temp2 = temp2.next.next
-    #     print(temp1.data)
+        while temp2 and temp2.next:
+            temp1 = temp1.next
+            temp2 = temp2.next.next
+        print(temp1.data)
 
     # # delete node
     # def delete(self, value):
