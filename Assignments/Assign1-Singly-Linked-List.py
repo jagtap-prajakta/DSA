@@ -60,16 +60,16 @@ class LinkedList:
             temp = temp.next 
         print("Value not found")
 
-    # # REVERSE THE LIST:
-    # def reverse(self):
-    #     current = self.head
-    #     prev = None
-    #     while current:
-    #         nextNode = current.next
-    #         current.next = prev
-    #         prev = current
-    #         current = nextNode
-    #     self.head = prev
+    # REVERSE THE LIST:
+    def reverse(self):
+        current = self.head
+        prev = None
+        while current:
+            nextNode = current.next
+            current.next = prev
+            prev = current
+            current = nextNode
+        self.head = prev
 
     # # Calculate the sum of every two consecutive values
     # def sum_consecutive(self):
