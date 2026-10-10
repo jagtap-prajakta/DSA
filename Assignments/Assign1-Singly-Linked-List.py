@@ -40,25 +40,25 @@ class LinkedList:
             temp2 = temp2.next.next
         print(temp1.data)
 
-    # # delete node
-    # def delete(self, value):
-    #     # initialize variables
-    #     temp = self.head    #temp points to the current node
-    #     prev = None    #prev stores the previous node
+    # delete node
+    def delete(self, value):
+        # initialize variables
+        temp = self.head    #temp points to the current node
+        prev = None    #prev stores the previous node
 
-    #     # search for the value while loop searches for the node containing the value
-    #     while temp:
-    #         if temp.data == value:
-    #             # delete the node
-    #             if prev == None:    #first node is being deleted
-    #                 self.head = temp.next
-    #             else:    #otherwise, connect the previous node to the next node, skipping the node being deleted
-    #                 prev.next = temp.next
-    #             return
-    #         # move to the next node : if the value is not found these statements mode through the list until the end
-    #         prev = temp 
-    #         temp = temp.next 
-    #     print("Value not found")
+        # search for the value while loop searches for the node containing the value
+        while temp:
+            if temp.data == value:
+                # delete the node
+                if prev == None:    #first node is being deleted
+                    self.head = temp.next
+                else:    #otherwise, connect the previous node to the next node, skipping the node being deleted
+                    prev.next = temp.next
+                return
+            # move to the next node : if the value is not found these statements mode through the list until the end
+            prev = temp 
+            temp = temp.next 
+        print("Value not found")
 
     # # REVERSE THE LIST:
     # def reverse(self):
