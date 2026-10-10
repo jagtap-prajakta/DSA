@@ -71,16 +71,16 @@ class LinkedList:
             current = nextNode
         self.head = prev
 
-    # # Calculate the sum of every two consecutive values
-    # def sum_consecutive(self):
-    #         if self.head == None or self.head.next == None:
-    #             print("List should contain atleast 2 nodes")
-    #             return
-    #         temp = self.head
+    # Calculate the sum of every two consecutive values
+    def sum_consecutive(self):
+            if self.head == None or self.head.next == None:
+                print("List should contain atleast 2 nodes")
+                return
+            temp = self.head
     
-    #         while temp.next:
-    #             print(temp.data + temp.next.data)
-    #             temp = temp.next
+            while temp.next:
+                print(temp.data + temp.next.data)
+                temp = temp.next
 
     # displaying list
     def display(self):
