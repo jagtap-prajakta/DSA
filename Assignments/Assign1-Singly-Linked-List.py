@@ -18,17 +18,17 @@ class LinkedList:
                 temp = temp.next
             temp.next = new_node
 
-    # # insert node at specific position
-    # def insert(self, new_node, pos):
-    #     temp = self.head  #points to first node
-    #     if pos == 1:
-    #         new_node.next = self.head
-    #         self.head = new_node
-    #     else:    #inserting node from 2nd to last node
-    #         for i in range(1, pos - 1):  
-    #             temp = temp.next
-    #         new_node.next = temp.next  # connects the new_node to the next node 
-    #         temp.next = new_node    #connect the previous node to the new_node
+    # insert node at specific position
+    def insert(self, new_node, pos):
+        temp = self.head  #points to first node
+        if pos == 1:
+            new_node.next = self.head
+            self.head = new_node
+        else:    #inserting node from 2nd to last node
+            for i in range(1, pos - 1):  
+                temp = temp.next
+            new_node.next = temp.next  # connects the new_node to the next node 
+            temp.next = new_node    #connect the previous node to the new_node
 
     # # find middle node and print its value
     # def middle(self):
