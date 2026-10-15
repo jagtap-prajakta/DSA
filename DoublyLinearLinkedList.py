@@ -1,3 +1,5 @@
+# 15 oct 2026
+
 class Node:
     def __init__(self, value):
         self.prev = None
