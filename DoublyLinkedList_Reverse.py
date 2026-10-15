@@ -1,4 +1,5 @@
-#waf to print node values in reverse order in doubly linked list
+# 15 oct 2026
+#wap to print node values in reverse order in doubly linked list
 class Node:
     def __init__(self, value):
         self.prev = None
