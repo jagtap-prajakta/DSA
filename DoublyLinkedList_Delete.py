@@ -62,12 +62,16 @@ class LinkedList:
 
         return count
 
+    # Write a functio to SWAP first and last nodes in DLL with all pointer values also:
+
     def display(self):
         temp = self.head
 
         while temp:
             print(temp.data)
             temp = temp.next
+
+
 
 
 list = LinkedList()
