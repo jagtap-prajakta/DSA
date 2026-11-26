@@ -1,5 +1,6 @@
 # 26 nov 2026
-# level order traversal  : printing level wise
+# - level order traversal  : printing level wise
+# - 
 
 class Node:
     def __init__(self, value):
@@ -38,15 +39,25 @@ class BST:
             return
         arr = []
         count = 0    #for counting visited node
+        level = 0
         arr.append(rt)
         while count < len(arr):
-            temp = arr[count]
-            count += 1
-            print(temp.data, end=" ")
-            if temp.left:
-                arr.append(temp.left)
-            if temp.right:
-                arr.append(temp.right)
+            
+            node_count = len(arr) - count    #no of nodes to be visited
+            print("\n Level",level, "nodes:", end=" ")
+            for i in range(node_count):
+
+                temp = arr[count]
+                count += 1
+                print(temp.data, end=" ")
+                if temp.left:
+                    arr.append(temp.left)
+                if temp.right:
+                    arr.append(temp.right)
+            level += 1
+        print("\nHeight of the tree: ", level-1)
+
+    # 
 
 
 
